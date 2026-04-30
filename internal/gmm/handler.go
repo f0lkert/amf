@@ -2054,11 +2054,8 @@ func HandleAuthenticationResponse(ue *context.AmfUe, accessType models.AccessTyp
 			}
 		}
 	case models.AusfUeAuthenticationAuthType_EAP_AKA_PRIME:
-		// EAPMessage (IEI 0x78) is an optional IE in the NAS
-		// AuthenticationResponse message. An attacker that knows a valid
-		// EAP-AKA'-configured SUCI can omit the IE; the NAS decoder then
-		// leaves EAPMessage as nil and the next line panicked before the
-		// UE had proven its identity (free5gc/free5gc#980).
+		// EAPMessage IE is optional in the NAS-AuthenticationResponse;
+		// reject the UE if it is omitted instead of dereferencing nil.
 		if authenticationResponse.EAPMessage == nil {
 			ue.GmmLog.Errorln("EAP-AKA' AuthenticationResponse missing mandatory EAPMessage; rejecting")
 			gmm_message.SendAuthenticationReject(ue.RanUe[accessType], "", 0, nasMetrics.AUSF_AUTH_ERR)
