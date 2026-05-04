@@ -2054,6 +2054,16 @@ func HandleAuthenticationResponse(ue *context.AmfUe, accessType models.AccessTyp
 			}
 		}
 	case models.AusfUeAuthenticationAuthType_EAP_AKA_PRIME:
+		// EAPMessage IE is optional in the NAS-AuthenticationResponse;
+		// reject the UE if it is omitted instead of dereferencing nil.
+		if authenticationResponse.EAPMessage == nil {
+			ue.GmmLog.Errorln("EAP-AKA' AuthenticationResponse missing mandatory EAPMessage; rejecting")
+			gmm_message.SendAuthenticationReject(ue.RanUe[accessType], "", 0, nasMetrics.AUSF_AUTH_ERR)
+			return GmmFSM.SendEvent(ue.State[accessType], AuthFailEvent, fsm.ArgsType{
+				ArgAmfUe:      ue,
+				ArgAccessType: accessType,
+			}, logger.GmmLog)
+		}
 		response, pd, err := consumer.GetConsumer().SendEapAuthConfirmRequest(ue, *authenticationResponse.EAPMessage)
 		if err != nil {
 			return err
