@@ -1,8 +1,8 @@
 package app
 
 import (
-	amf_context "github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/pkg/factory"
+	amf_context "github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/pkg/factory"
 )
 
 type App interface {

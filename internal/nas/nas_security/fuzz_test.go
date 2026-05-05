@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	amf_context "github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/logger"
-	"github.com/free5gc/amf/internal/nas/nas_security"
+	amf_context "github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/nas/nas_security"
 	"github.com/free5gc/nas"
 	"github.com/free5gc/nas/security"
 	"github.com/free5gc/openapi/models"

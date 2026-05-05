@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	amf_context "github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/logger"
+	amf_context "github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/logger"
 	"github.com/free5gc/nas/nasType"
 	"github.com/free5gc/openapi"
 	Nausf_UEAuthentication "github.com/free5gc/openapi/ausf/UEAuthentication"

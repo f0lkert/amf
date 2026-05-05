@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/free5gc/amf/internal/logger"
-	"github.com/free5gc/amf/pkg/factory"
+	"github.com/f0lkert/amf/internal/logger"
+	"github.com/f0lkert/amf/pkg/factory"
 	"github.com/free5gc/nas/nasConvert"
 	"github.com/free5gc/nas/security"
 	"github.com/free5gc/openapi"

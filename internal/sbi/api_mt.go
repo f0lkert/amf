@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/logger"
 )
 
 func (s *Server) getMTRoutes() []Route {

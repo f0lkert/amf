@@ -1,11 +1,11 @@
 package common
 
 import (
-	"github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/logger"
-	business_metrics "github.com/free5gc/amf/internal/metrics/business"
-	ngap_message "github.com/free5gc/amf/internal/ngap/message"
-	"github.com/free5gc/amf/internal/sbi/consumer"
+	"github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/logger"
+	business_metrics "github.com/f0lkert/amf/internal/metrics/business"
+	ngap_message "github.com/f0lkert/amf/internal/ngap/message"
+	"github.com/f0lkert/amf/internal/sbi/consumer"
 	"github.com/free5gc/ngap/ngapType"
 	"github.com/free5gc/openapi/models"
 )

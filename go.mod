@@ -1,4 +1,4 @@
-module github.com/free5gc/amf
+module github.com/f0lkert/amf
 
 go 1.25.5
 

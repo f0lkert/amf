@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/gmm"
-	"github.com/free5gc/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/gmm"
+	"github.com/f0lkert/amf/internal/logger"
 	"github.com/free5gc/nas"
 	"github.com/free5gc/openapi/models"
 	"github.com/free5gc/util/fsm"

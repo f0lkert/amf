@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/free5gc/amf/internal/context"
+	"github.com/f0lkert/amf/internal/context"
 	"github.com/free5gc/openapi/models"
 )
 

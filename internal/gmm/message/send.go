@@ -3,11 +3,11 @@ package message
 import (
 	"fmt"
 
-	"github.com/free5gc/amf/internal/context"
-	gmm_common "github.com/free5gc/amf/internal/gmm/common"
-	"github.com/free5gc/amf/internal/logger"
-	ngap_message "github.com/free5gc/amf/internal/ngap/message"
-	callback "github.com/free5gc/amf/internal/sbi/processor/notifier"
+	"github.com/f0lkert/amf/internal/context"
+	gmm_common "github.com/f0lkert/amf/internal/gmm/common"
+	"github.com/f0lkert/amf/internal/logger"
+	ngap_message "github.com/f0lkert/amf/internal/ngap/message"
+	callback "github.com/f0lkert/amf/internal/sbi/processor/notifier"
 	"github.com/free5gc/nas/nasMessage"
 	"github.com/free5gc/ngap/ngapType"
 	"github.com/free5gc/openapi/models"

@@ -8,9 +8,9 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/free5gc/amf/internal/logger"
-	ngap_internal "github.com/free5gc/amf/internal/ngap"
-	"github.com/free5gc/amf/pkg/factory"
+	"github.com/f0lkert/amf/internal/logger"
+	ngap_internal "github.com/f0lkert/amf/internal/ngap"
+	"github.com/f0lkert/amf/pkg/factory"
 	"github.com/free5gc/ngap"
 	"github.com/free5gc/sctp"
 )

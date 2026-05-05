@@ -12,9 +12,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/free5gc/amf/internal/logger"
-	business_metrics "github.com/free5gc/amf/internal/metrics/business"
-	"github.com/free5gc/amf/pkg/factory"
+	"github.com/f0lkert/amf/internal/logger"
+	business_metrics "github.com/f0lkert/amf/internal/metrics/business"
+	"github.com/f0lkert/amf/pkg/factory"
 	"github.com/free5gc/nas/nasMessage"
 	"github.com/free5gc/nas/nasType"
 	"github.com/free5gc/nas/security"

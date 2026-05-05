@@ -8,12 +8,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/amf/internal/context"
-	gmm_common "github.com/free5gc/amf/internal/gmm/common"
-	gmm_message "github.com/free5gc/amf/internal/gmm/message"
-	"github.com/free5gc/amf/internal/logger"
-	amf_nas "github.com/free5gc/amf/internal/nas"
-	ngap_message "github.com/free5gc/amf/internal/ngap/message"
+	"github.com/f0lkert/amf/internal/context"
+	gmm_common "github.com/f0lkert/amf/internal/gmm/common"
+	gmm_message "github.com/f0lkert/amf/internal/gmm/message"
+	"github.com/f0lkert/amf/internal/logger"
+	amf_nas "github.com/f0lkert/amf/internal/nas"
+	ngap_message "github.com/f0lkert/amf/internal/ngap/message"
 	"github.com/free5gc/ngap/ngapType"
 	"github.com/free5gc/openapi/models"
 	"github.com/free5gc/util/metrics/sbi"

@@ -8,10 +8,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/amf/internal/context"
-	gmm_common "github.com/free5gc/amf/internal/gmm/common"
-	"github.com/free5gc/amf/internal/logger"
-	"github.com/free5gc/amf/internal/nas/nas_security"
+	"github.com/f0lkert/amf/internal/context"
+	gmm_common "github.com/f0lkert/amf/internal/gmm/common"
+	"github.com/f0lkert/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/nas/nas_security"
 	"github.com/free5gc/nas/security"
 	"github.com/free5gc/openapi/models"
 	"github.com/free5gc/util/metrics/sbi"

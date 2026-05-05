@@ -3,8 +3,8 @@ package ngap
 import (
 	"net"
 
-	"github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/logger"
 	"github.com/free5gc/ngap"
 	"github.com/free5gc/ngap/ngapType"
 	"github.com/free5gc/sctp"

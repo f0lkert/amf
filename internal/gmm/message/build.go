@@ -8,10 +8,10 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/logger"
-	"github.com/free5gc/amf/internal/nas/nas_security"
-	"github.com/free5gc/amf/pkg/factory"
+	"github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/logger"
+	"github.com/f0lkert/amf/internal/nas/nas_security"
+	"github.com/f0lkert/amf/pkg/factory"
 	"github.com/free5gc/nas"
 	"github.com/free5gc/nas/nasConvert"
 	"github.com/free5gc/nas/nasMessage"

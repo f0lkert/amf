@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	amf_context "github.com/free5gc/amf/internal/context"
-	"github.com/free5gc/amf/internal/util"
-	"github.com/free5gc/amf/pkg/factory"
+	amf_context "github.com/f0lkert/amf/internal/context"
+	"github.com/f0lkert/amf/internal/util"
+	"github.com/f0lkert/amf/pkg/factory"
 	"github.com/free5gc/nas/nasMessage"
 	"github.com/free5gc/openapi"
 	"github.com/free5gc/openapi/models"
